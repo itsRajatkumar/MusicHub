@@ -39,7 +39,7 @@ nav ul li{
     font-family: 'Varela Round', sans-serif;
     display: flex;
     margin: 23px auto;
-    width: 70%;
+    width: 80%;
     border-radius: 12px;
     padding: 24px;
     background-image: url('bg.jpg');
@@ -56,11 +56,17 @@ nav ul li{
     justify-content: center;
     color: white;
 }
+
 .icons{
-    margin-top: 25px;
-}
-.icons i{
     cursor: pointer;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+}
+
+embed{
+    height: 4em;
+    width: 4em;
 }
 
 #myprogressbar{
@@ -104,4 +110,12 @@ nav ul li{
 .songinfo img{
     opacity: 0;
     transition: opacity 0.5s ease-in;
+}
+
+@media screen and (max-width: 850) {
+    .bottom{
+        
+        display: flex;
+        flex-direction: column;
+    }
 }
